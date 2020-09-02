@@ -1,0 +1,53 @@
+char 'a' 2 bytes 0000 0000 0110 0001
+byte 5   1 byte  0000 0101
+short 5  2 bytes 0000 0000 0000 0101
+int  5   4 bytes 0000 0000 0000 0000 0000 0000 0000 0101
+long 5   8 bytes  
+
+'a' -> 97  -> 110001
+       64	32	16	8	4	2	1
+       1    1   0   0   0   0   1
+
+int num1 = 5;
+num1 = 10;
+num1 = 999;
+num1 = 9999999;
+byte num2 = 5;
+num2 = 999;
+double num3 = 5;
+char c = 'a';   	// 'a' is still postive integer a number    97 
+					// "" for String "Hello wrold" 
+					// '' for one character 
+					// 'hello'  -> wrong
+					// Ascii table 
+						1. the vaule of a number character is not equal to that number 
+						    '0' is not the same as 0, '0' is the same as 48 
+					    2. the number characters, the uppercase letters, the lowercase letters are stored continuously.
+					    3. the values of uppercase letters is lower than the values of lowercase letters 
+				    // Unicode 
+				    	1. Ascii table is a small subset of Unicode
+
+char c = 'a';
+sout(c + 1) -> 98 
+
+3.14    -> double   8 bytes
+3.14f	-> float 	4 bytes 
+
+in this course
+double num = 3.14;
+
+in industrial
+float num = 3.14f;
+
+# Summary
+	5 integrals:
+		*				   *			
+		char, byte, short, int, long
+		2     1     2      4    8
+
+	2 floating:
+			   *
+		float, double
+		4 	   8
+
+	1 boolean
